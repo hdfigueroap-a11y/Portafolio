@@ -39,7 +39,7 @@ repos/
 
 ## 🚀 Ver en vivo
 
-🌐 [Abrir portafolio](https://hectorfigueroa.github.io/html-boilerplate/)
+🌐 [Abrir portafolio](https://github.com/hdfigueroap-a11y/Portafolio.git)
 
 ---
 
@@ -49,8 +49,8 @@ repos/
 |---|---|
 | 📧 Email | hdfigueroap@gmail.com |
 | 📱 Teléfono | +57 312 229 3391 |
-| 📸 Instagram | [@hector](https://www.instagram.com) |
-| 📘 Facebook | [Hector Figueroa](https://www.facebook.com) |
+| 📸 Instagram | [@hector](https://www.instagram.com/hector_figueroap/?hl=es) |
+| 📘 Facebook | [Hector Figueroa](https://www.facebook.com/hectorfigueroadp/) |
 
 ---
 
