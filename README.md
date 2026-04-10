@@ -30,10 +30,9 @@ Me apasiona la programación y estoy en proceso de construir mis habilidades com
 ## 📁 Estructura del proyecto
 
 ```
-html-boilerplate/
+repos/
 ├── index.html       # Página principal / Homepage
-└── pages/
-    └── about.html   # Página de presentación personal
+└── about.html       # Página de presentación personal
 ```
 
 ---
@@ -57,7 +56,7 @@ html-boilerplate/
 
 ## 📌 Sobre este repositorio
 
-Este proyecto es parte de mi aprendizaje en **The Odin Project**, un currículo de desarrollo web de código abierto. Aquí practico los fundamentos de HTML, rutas relativas, estructura de directorios y despliegue con GitHub Pages.
+Este proyecto es parte de mi aprendizaje. Aquí practico los fundamentos de HTML, rutas relativas, estructura de directorios y despliegue con GitHub Pages.
 
 ---
 
