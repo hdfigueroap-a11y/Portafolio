@@ -39,7 +39,7 @@ repos/
 
 ## 🚀 Ver en vivo
 
-🌐 [Abrir portafolio](https://github.com/hdfigueroap-a11y/Portafolio.git)
+🌐 [Abrir portafolio](https://hdfigueroap-a11y.github.io/Portafolio/)
 
 ---
 
