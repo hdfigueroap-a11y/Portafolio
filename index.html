@@ -1,43 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portafolio</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <h1>Portafolio</h1> 
-        <h2>¿Quien soy?</h2>
-            <!-- Quien es realmente importante para mi?
-            El nombre sale en esa susodicha película de un robot reciclador-->
-            <p>
-                Soy Hector Figueroa, estudiante de ingeniería de Software en
-                la UMB y estudiante de Economía en la UNAL. Amo las matemáticas,
-                la programación y por sobre todo, las <strong>mujeres.</strong> 
-            </p>
-
-            <img src="assets/images/ftpg.jpg" alt="Foto que me tomo Ger sin darme cuenta (Sali hermoso)." height="410" width="310"> 
-
-        <h2>Estudiante de:</h2>
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Hector Figueroa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Portafolio Personal</h1>
+        <nav>
             <ul>
-                <li>Economía - UNAL</li>
-                <li>Ing. De Software - UMB</li>
+                <li><a href="pages/about.html">Sobre Mí</a></li>
+                <li><a href="pages/projects.html">Proyectos</a></li>
+                <li><a href="pages/contact.html">Contacto</a></li>
             </ul>
-            <p>Estudio dos carreras al tiempo. <a href="pages/about.html">¿Por qué?</a></p>
-        <h2>Contacto:</h2>
-            <ol>
-                <li>+57 3122293391</li>
-                <li>hdfigueroap@gmail.com</li>
-                <li>
-                    <a href="https://www.instagram.com/hector_figueroap/" target="_blank" rel="noreferrer">Instagram</a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/hectorfigueroadp/" target="_blank" rel="noreferrer">Facebook</a>
-                </li>
-            </ol>
-        <p>
-            Att. <em>Hector Figueroa</em>
-        </p>
-    </body>
+        </nav>
+    </header>
+
+    <main>
+        <section id="presentacion">
+            <h2>¿Quién soy?</h2>
+            <p>
+                Soy <strong>Hector Figueroa</strong>, estudiante de Ingeniería de Software en la UMB y de Economía en la UNAL. 
+                Me apasiona encontrar la intersección entre la lógica matemática, el desarrollo de software y el análisis económico.
+            </p>
+            <img src="assets/images/ftpg.jpg" alt="Foto de Hector Figueroa" height="410" width="310">
+        </section>
+
+        <section id="educacion">
+            <h2>Formación Académica</h2>
+            <ul>
+                <li>Economía - Universidad Nacional de Colombia (UNAL)</li>
+                <li>Ingeniería de Software - Universidad Manuela Beltrán (UMB)</li>
+            </ul>
+            <p>Descubre por qué decidí cursar ambas carreras <a href="pages/about.html">aquí</a>.</p>
+        </section>
+
+        <section id="enlaces-rapidos">
+            <h2>Conectemos</h2>
+            <p>Puedes ver mis trabajos en la sección de <a href="pages/projects.html">Proyectos</a> o escribirme directamente.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Att. <em>Hector Figueroa</em></p>
+    </footer>
+</body>
 </html>
