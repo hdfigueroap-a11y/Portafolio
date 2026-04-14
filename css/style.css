@@ -148,7 +148,7 @@ img {
   max-width: 100%;
   height: auto;
   border-radius: var(--radius);
-  margin: 1.75rem 0;
+  margin: 1.75rem auto;
   box-shadow:
     8px 8px 0 var(--accent),
     16px 16px 0 color-mix(in srgb, var(--accent) 25%, transparent);
