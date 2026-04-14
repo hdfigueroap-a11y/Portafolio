@@ -1,0 +1,253 @@
+/* ============================================
+   PORTAFOLIO — Hector Figueroa
+   Aesthetic: Dark Editorial / Coder Brutalism
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
+
+/* ── Variables ── */
+:root {
+  --bg:        #080808;
+  --surface:   #111111;
+  --border:    #222222;
+  --text:      #e8e0d0;
+  --muted:     #6b6560;
+  --accent:    #c8a96e;   /* warm gold */
+  --accent2:   #4ecdc4;   /* teal pop  */
+  --danger:    #e05c5c;
+  --ff-display: 'Playfair Display', Georgia, serif;
+  --ff-mono:    'IBM Plex Mono', 'Courier New', monospace;
+  --radius:    2px;
+  --max-w:     780px;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Base ── */
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--ff-mono);
+  font-size: 15px;
+  line-height: 1.75;
+  min-height: 100vh;
+  padding: 0 1.5rem;
+
+  /* subtle grain overlay */
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  animation: bodyFadeIn 0.6s ease both;
+}
+
+@keyframes bodyFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Layout wrapper ── */
+body > * {
+  max-width: var(--max-w);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── H1 — Main title ── */
+h1 {
+  font-family: var(--ff-display);
+  font-size: clamp(3rem, 10vw, 6rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  padding: 4rem 0 0.25rem;
+  line-height: 1;
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  width: 3.5rem;
+  height: 3px;
+  background: var(--accent);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  animation: slideIn 0.8s 0.3s ease both;
+}
+
+@keyframes slideIn {
+  from { width: 0; opacity: 0; }
+  to   { width: 3.5rem; opacity: 1; }
+}
+
+/* ── H2 — Section headings ── */
+h2 {
+  font-family: var(--ff-display);
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  font-weight: 700;
+  font-style: italic;
+  color: var(--accent);
+  margin-top: 3.5rem;
+  margin-bottom: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+h2::before {
+  content: '//';
+  font-family: var(--ff-mono);
+  font-style: normal;
+  font-size: 0.75em;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+}
+
+/* ── Paragraphs ── */
+p {
+  color: var(--text);
+  max-width: 62ch;
+  margin-bottom: 1.25rem;
+  font-weight: 300;
+}
+
+/* ── Strong & Em ── */
+strong {
+  color: var(--danger);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--danger) 40%, transparent);
+  text-underline-offset: 3px;
+}
+
+em {
+  color: var(--accent);
+  font-style: italic;
+}
+
+/* ── Signature paragraph ── */
+body > p:last-of-type {
+  margin-top: 4rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding-bottom: 4rem;
+}
+
+/* ── Photo ── */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  margin: 1.75rem 0;
+  box-shadow:
+    8px 8px 0 var(--accent),
+    16px 16px 0 color-mix(in srgb, var(--accent) 25%, transparent);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+img:hover {
+  transform: translate(-4px, -4px);
+  box-shadow:
+    12px 12px 0 var(--accent),
+    24px 24px 0 color-mix(in srgb, var(--accent) 25%, transparent);
+}
+
+/* ── Lists ── */
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+ul li, ol li {
+  position: relative;
+  padding-left: 1.75rem;
+  font-weight: 300;
+}
+
+/* Unordered: gold square bullet */
+ul li::before {
+  content: '▪';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.9em;
+  top: 0.1em;
+}
+
+/* Ordered: teal counter */
+ol {
+  counter-reset: hf-counter;
+}
+ol li {
+  counter-increment: hf-counter;
+}
+ol li::before {
+  content: counter(hf-counter, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  color: var(--accent2);
+  font-size: 0.75em;
+  font-weight: 500;
+  top: 0.25em;
+  letter-spacing: 0.03em;
+}
+
+/* ── Links ── */
+a {
+  color: var(--accent2);
+  text-decoration: none;
+  position: relative;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--accent2);
+  transition: width 0.25s ease;
+}
+
+a:hover {
+  color: var(--text);
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+
+/* ── Selection ── */
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  body { padding: 0 1rem; }
+  img  { box-shadow: 5px 5px 0 var(--accent); }
+}
